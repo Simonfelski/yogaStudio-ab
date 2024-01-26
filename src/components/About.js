@@ -15,6 +15,8 @@ const About = props => {
 		return <PrivateComponent key={privateValue.id} privateValue={privateValue} />
 	})
 
+	
+
 	return (
 		<div>
 			<div className="text-center mb-20 pt-8 max-w-[1240px] m-auto">
