@@ -16,6 +16,8 @@ import TrainingTypes from './components/TrainingTypes'
 import Quote from './components/Quote'
 import Contact from './components/Contact'
 import About from './components/About'
+import dataRecommendation from './dataRecommendation'
+import Recommendation from './components/Recommendation'
 
 function App() {
 	const cards = dataCard.map(item => {
@@ -30,13 +32,15 @@ function App() {
 		return <TrainingTypes key={type.id} type={type} />
 	})
 
+	
+
 
 	return (
 	
 		<div>
 			<Navbar />
 			<Routes>
-				<Route path ='/' element={[<Hero />, <AboutIntro />, <section className="flex justify-between m-auto max-w-[1240px] my-10">{cards}</section>, <Footer /> ]} />
+				<Route path ='/' element={[<Hero />, <AboutIntro />, <section className="flex justify-between m-auto max-w-[1240px] my-10">{cards}</section>,<Recommendation reviews={dataRecommendation} /> , <Footer /> ]} />
 				<Route path ='/about' element= {<About />} />
 				<Route path ='/withme' element= {[<Withme />, <section className="flex flex-wrap m-auto max-w-screen-xl justify-evenly gap-4 my-10">{trainings}</section>, <TrainingTypesIntro />, <section>{types}</section>, <Quote />, <Footer />]} />
 				<Route path ='/contact' element= {[<Contact />, <Footer />]} />

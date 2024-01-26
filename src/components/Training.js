@@ -7,6 +7,7 @@ const Training = (props) => {
     //   <p className="text-gray-600">{props.offer.description}</p>
     // </div>
 
+    
     <div className="flip rounded-lg overflow-hidden">
       <div className="flip-inside relative">
         {/* Front side */}
