@@ -18,6 +18,7 @@ const Footer = () => {
       </div>
       <div>
         <ul>
+        <li className='m-2 text-lg uppercase font-bold'><p>skontaktuj się ze mną</p></li>
           <li className='m-2 text-lg'><p>tel: +48 798 477 892</p></li>
           <li className='m-2 text-lg'><p>e-mail: agata@yoga.pl</p></li>
           <li className='m-2 text-lg transition-transform transform hover:scale-110'><a href="#">Sprawdź moją ofertę</a></li>

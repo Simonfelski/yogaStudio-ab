@@ -9,9 +9,9 @@ const Hero = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center" >
         <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#8d6b5f] uppercase">Odkryj swoją wewnętrzną siłę</h1>
         <p className="text-lg text-[#d5c6b3] mb-4">Wybierz swoj styl:</p>
-        <button className="rounded-full text-[#fff] font-semibold bg-button hover:bg-button-hover py-2 px-4 transition duration-300">
+        {/* <button className="rounded-full text-[#fff] font-semibold bg-button hover:bg-button-hover py-2 px-4 transition duration-300">
           Zapisz się
-        </button>
+        </button> */}
       </div>
     </div>
   );

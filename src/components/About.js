@@ -130,24 +130,27 @@ const About = props => {
 				</div>
 			</div>
 
-			<div className="max-w-full text-center mt-20 py-8 bg-section">
+			<div className="max-w-full text-center mt-20 py-8 bg-[#f5f2f2]">
 				<h2 className="font-bold uppercase text-xl">Co jest dla mnie ważne?</h2>
 				<p>Mam kilka wartości, którymi kieruję się i na macie i w życiu.</p>
 			</div>
 
-			<div className="flex flex-wrap gap-12 justify-center m-auto py-8 bg-section ">{myValues}</div>
+			<div className="flex flex-wrap gap-12 justify-center m-auto py-8 bg-[#f5f2f2] ">{myValues}</div>
+
+			<div className="text-center mb-10 py-8 bg-[#f5f2f2]">
+				<h2 className="font-bold uppercase text-xl max-w-[1240px] m-auto">A prywatnie?</h2>
+				<p className="mb-10">Jaka jestem? Mam swoje dziwne zwyczaje. Może Ty podchodzisz do świata podobnie?</p>
+
+				<div className="flex flex-wrap gap-12 justify-center p-1 max-w-[1240px] m-auto">{myPrivateValues}</div>
+			</div>
+
 			<div className="text-center mt-20 mb-10">
 				<h2 className="font-bold uppercase text-xl">Tu znajdziesz kilka dyplomów,</h2>
 				<p>które zdobyłam na mojej drodze do bycia instruktorką jogi i trenerem medycznym.</p>
 				{/* dyplomy */}
 			</div>
 
-			<div className="text-center mt-20 mb-10 py-8 bg-section">
-				<h2 className="font-bold uppercase text-xl max-w-[1240px] m-auto">A prywatnie?</h2>
-				<p className="mb-10">Jaka jestem? Mam swoje dziwne zwyczaje. Może Ty podchodzisz do świata podobnie?</p>
-
-				<div className="flex flex-wrap gap-12 justify-center p-1 max-w-[1240px] m-auto">{myPrivateValues}</div>
-			</div>
+			
 
 			<div className="text-center mt-20 mb-10 max-w-[1240px] m-auto">
 				<div>

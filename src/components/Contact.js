@@ -25,7 +25,7 @@ const Contact = () => {
 			</div>
 
 			<div className='text-center'>
-				<p className='uppercase'>Formularz Kontaktowy tutaj</p>
+				
 			</div>
 
 			{/* <div className="max-w-[800px] mx-auto py-16 px-4">

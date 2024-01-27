@@ -42,7 +42,7 @@ const Recommendation = props => {
 
 	return (
 		<div className="max-w-[1240px] m-auto my-20">
-			<h2 className="text-center text-2xl font-bold mb-10 uppercase"> Rekomendacje</h2>
+			<h2 className="text-center text-2xl font-bold mb-10 uppercase"> Opinie</h2>
 			<Slider {...settings}>
                 
 				{props.reviews.map(review => (

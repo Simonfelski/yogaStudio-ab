@@ -45,7 +45,7 @@ const Withme = () => {
 		//   </div>
 		// </div>
 		// </div>
-		<div className='bg-section'>
+		<div className=''>
 			<div div className="max-w-[1240px] mx-auto py-16 px-4">
 				<h3 className="font-bold text-2xl text-center mb-5">Masz ochotę na wspólną praktykę?</h3>
 				<p>
