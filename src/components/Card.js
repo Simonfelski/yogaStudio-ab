@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const Card = (props) => {
   return (
     <div className="flip rounded-lg overflow-hidden">
@@ -13,7 +16,7 @@ const Card = (props) => {
         {/* Back side */}
         <div className="flip-card-back rounded-lg flex-col items-center justify-center">
          <p className="text-lg p-4 mt-10">{props.item.description}</p>
-          <a href="#" >Czytaj więcej</a>
+          <Link to="/about" >Czytaj więcej</Link>
         </div>
       </div>
     </div>

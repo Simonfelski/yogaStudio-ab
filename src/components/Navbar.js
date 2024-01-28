@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link, useMatch, useResolvePath } from 'react-router-dom';
-import Withme from './Withme';
-import Contact from './Contact';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
  
 
@@ -18,20 +21,6 @@ const Navbar = () => {
       setNav(false);
     }
   };
-
-  // Sprawdz wersje, na tej nie dziala useResolvePath
-
-  // function CustomLink({ to, children, ...props }) {
-  //   const resolvedPath = useResolvePath(to)
-  //   const isActive = useMatch({ path: resolvedPath.pathname, end:true })
-  //   return (
-  //     <li className={isActive ? 'active' : ''}>
-  //       <Link to={to} {...props}>
-  //         {children}
-  //       </Link>
-  //     </li>
-  //   )
-  // }
 
 
   return (

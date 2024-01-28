@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -21,7 +22,7 @@ const Footer = () => {
         <li className='m-2 text-lg uppercase font-bold'><p>skontaktuj się ze mną</p></li>
           <li className='m-2 text-lg'><p>tel: +48 798 477 892</p></li>
           <li className='m-2 text-lg'><p>e-mail: agata@yoga.pl</p></li>
-          <li className='m-2 text-lg transition-transform transform hover:scale-110'><a href="#">Sprawdź moją ofertę</a></li>
+          <li className='m-2 text-lg transition-transform transform hover:scale-110'><Link to="/withme">Sprawdź moją ofertę</Link></li>
         </ul>
       </div>
     </div>
