@@ -6,6 +6,7 @@ import dataPrivate from '../dataPrivate'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
+
 const About = props => {
 	const myValues = dataValues.map(value => {
 		return <ValuesComponent key={value.id} value={value} />
@@ -21,7 +22,7 @@ const About = props => {
 				<h1 className="font-bold text-2xl">O MNIE</h1>
 				<h2 className="font-semibold">Agata Budzyńska</h2>
 			</div> */}
-			<div className="flex flex-col text-center px-5 md:flex-row md:text-left md:mb-20 md:mt-20 md:max-w-[1240px] m-auto">
+			<div className="flex flex-col text-justify px-5 md:flex-row md:text-left md:mb-20 md:mt-20 md:max-w-[1240px] m-auto">
 				<div className="mr-5">
 					<h3 className="font-semibold text-2xl pb-5 md:pb-0">Hej, tu Agata Budzyńska.</h3>
 					<p>
@@ -62,7 +63,7 @@ const About = props => {
 				<div className="mr-5 order-1 md:order-none">
 					<img src="../images/about2.jpg" alt="/" className="rounded-lg py-5 md:py-0" />
 				</div>
-				<div>
+				<div className='text-justify'>
 					<h3 className="font-semibold py-5 md:py-0">Marzy mi się świat ludzi spełnionych i szczęśliwych. </h3>
 					<p>
 						Realizujących swoje marzenia z lekkością i ogromną pewnością siebie. Dokonujących zdrowych dla siebie
@@ -97,7 +98,7 @@ const About = props => {
 				</div>
 			</div>
 
-			<div className="flex flex-col text-center px-5 py-10 md:py-0 md:px-0 md:text-left md:flex-row md:max-w-[1240px] m-auto">
+			<div className="flex flex-col text-justify px-5 py-10 md:py-0 md:px-0 md:text-left md:flex-row md:max-w-[1240px] m-auto">
 				<div>
 					<h3 className="font-semibold">Miałam wtedy 20 lat.</h3>
 					<p>

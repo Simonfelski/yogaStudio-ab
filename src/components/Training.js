@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Training = (props) => {
   return (
-    <div className=" rounded-md p-12 text-center md:w-1/4">
+    <div className=" rounded-md p-12 text-center md:w-1/3">
       <h2 className="text-xl font-semibold mb-5 ">{props.offer.title}</h2>
       <p className='flex justify-center py-5'><GiBeveledStar size={30} /></p>
-      <p className="text-gray-600 pb-5">{props.offer.description}</p>
+      <p className="text-gray-600 pb-5 text-justify">{props.offer.description}</p>
       <Link to='/contact' className="rounded-lg text-sm text-[#fff] font-semibold bg-button hover:bg-button-hover py-2 px-4 transition duration-300">Zapisz się</Link>
     </div>
 

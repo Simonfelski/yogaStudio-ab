@@ -11,12 +11,7 @@ export default [
         description: `Są zalecane, gdy mierzysz się z poważnymi kontuzjami lub przeciwwskazaniami. Jako trener medyczny powiem Ci, co zrobić, by poprawić Twój stan i zapobiegać problemom. To również idealny wybór dla sportowców.`,
         coverImg: '../images/training/training2.jpg'
     },
-    {
-        id: 3,
-        title: `WARSZTATY WYJAZDOWE`,
-        description: `Chcesz spędzić czas blisko natury, w gronie osób o zbliżonym światopoglądzie? Wyjazdy z jogą to Twoja chwila na oddech. Wracasz z nich wypoczęta i pełna energii do mierzenia się z codziennością.`,
-        coverImg: '../images/training/training3.jpg'
-    },
+   
     {
         id: 4,
         title: `JOGA DLA FIRM`,
@@ -28,5 +23,11 @@ export default [
         title: `KURSY ONLINE`,
         description: `No dobrze, na razie jeden kurs. Lecz za to bardzo ważny. Naucz się ze mną świadomego oddechu. Twój oddech może Cię uspokoić w sytuacji stresowej. Może też pobudzić Cię do działania. Lub zwiększyć Twoją koncentrację. Świetny wstęp do medytacji.`,
         coverImg: '../images/training/training4.jpg'
+    },
+    {
+        id: 3,
+        title: `WARSZTATY WYJAZDOWE`,
+        description: `Chcesz spędzić czas blisko natury, w gronie osób o zbliżonym światopoglądzie? Wyjazdy z jogą to Twoja chwila na oddech. Wracasz z nich wypoczęta i pełna energii do mierzenia się z codziennością.`,
+        coverImg: '../images/training/training3.jpg'
     },
 ]

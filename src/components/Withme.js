@@ -45,7 +45,7 @@ const Withme = () => {
 		//   </div>
 		// </div>
 		// </div>
-		<div className='pt-20 text-center'>
+		<div className='pt-20 text-justify md:text-center'>
 			<div className="max-w-[1240px] mx-auto py-16 px-10 md:px-4">
 				<h3 className="font-bold text-2xl pb-5 md:pb-0  mb-5">Masz ochotę na wspólną praktykę?</h3>
 				<p>

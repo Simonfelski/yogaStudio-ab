@@ -3,7 +3,7 @@ import React from 'react'
 const TrainingTypesIntro = () => {
 	return (
 		<div className='bg-[#d5c6b3]'>
-			<div className="max-w-[1240px] mx-auto py-16 px-10 md:px-4 text-center">
+			<div className="max-w-[1240px] mx-auto py-16 px-10 md:px-4 text-justify md:text-center">
 				<h2 className="uppercase font-bold text-xl bg-gray-700 text-white p-2 rounded-md mb-8">
 					Który styl jogi będzie idealny właśnie dla Ciebie?
 				</h2>

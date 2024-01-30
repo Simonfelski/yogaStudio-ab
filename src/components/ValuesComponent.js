@@ -3,8 +3,8 @@ import { GiBeveledStar } from "react-icons/gi";
 
 const ValuesComponent = (props) => {
   return (
-    <div className=" p-12 md:h-1/2 md:w-3/12 text-center">
-      <h2 className="text-xl font-semibold mb-5 ">{props.value.title}</h2>
+    <div className=" p-12 md:h-1/2 md:w-4/12 text-justify">
+      <h2 className="text-xl font-semibold mb-5 text-center">{props.value.title}</h2>
       <p className='flex justify-center py-5'><GiBeveledStar size={30} /></p>
       <p className="text-gray-600">{props.value.description}</p>
     </div>
