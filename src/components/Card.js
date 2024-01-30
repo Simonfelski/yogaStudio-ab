@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Card = (props) => {
   return (
-    <div className="flip rounded-lg overflow-hidden">
+    <div className="rounded-lg overflow-hidden m-auto flip-mobile md:flip">
       <div className="flip-inside relative">
         {/* Front side */}
-        <div className="flip-card-front relative">
+        <div className="flip-card-front relative ">
           <img src={props.item.coverImg} alt="Avatar" className="w-full h-full object-cover rounded-lg" />
           <div className="absolute top-0 right-0 p-4">
             <h3 className="text-2xl font-bold text-[white]">{props.item.title}</h3>

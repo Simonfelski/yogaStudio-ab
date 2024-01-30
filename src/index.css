@@ -12,13 +12,20 @@ html {
 body {
   line-height: 2.5rem;
   font-family: 'Poppins', sans-serif;
+  background-color: #ffeede;
 }
 
 .flip {
   background-color: transparent;
   width: 30%;
   height: 600px;
-  
+  perspective: 1000px;
+}
+
+.flip-mobile {
+  background-color: transparent;
+  width: 80%;
+  height: 600px;
   perspective: 1000px;
 }
 
@@ -32,6 +39,10 @@ body {
 }
 
 .flip:hover .flip-inside {
+  transform: rotateY(180deg);
+}
+
+.flip-mobile:hover .flip-inside {
   transform: rotateY(180deg);
 }
 

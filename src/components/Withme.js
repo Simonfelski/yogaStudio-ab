@@ -45,9 +45,9 @@ const Withme = () => {
 		//   </div>
 		// </div>
 		// </div>
-		<div className=''>
-			<div div className="max-w-[1240px] mx-auto py-16 px-4">
-				<h3 className="font-bold text-2xl text-center mb-5">Masz ochotę na wspólną praktykę?</h3>
+		<div className='pt-20 text-center'>
+			<div className="max-w-[1240px] mx-auto py-16 px-10 md:px-4">
+				<h3 className="font-bold text-2xl pb-5 md:pb-0  mb-5">Masz ochotę na wspólną praktykę?</h3>
 				<p>
 					Prowadzę zajęcia grupowe i indywidualne. Organizuję warsztaty wyjazdowe oraz stacjonarne warsztaty dla firm.
 					Sprawdź w kalendarzu, co planuję w najbliższym czasie. Zerknij też niżej i zdecyduj, czy bardziej odpowiada Ci

@@ -5,9 +5,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'primary': '#d5c6b3',
-      'secondary': '#b38a6c',
-      'third': '#8d6b5f',
+      'primary': '#713132',
+      'secondary': '#9f7c65',
+      'third': '#e6dcd2',
+      'fourth': '#c6b1a6',
       'section': '#e6dcd2',
       'button': '#713132',
       'button-hover':'#bb9d85'

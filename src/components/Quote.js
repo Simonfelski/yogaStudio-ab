@@ -2,7 +2,7 @@ import React from 'react'
 
 const Quote = () => {
 	return (
-		<div className='py-5'>
+		<div className='py-5 px-10'>
 			<h2 className="text-center font-semibold">
 				„Jeśli chcesz odnieść sukces, musisz nauczyć się, jak okiełznać swoje ciało<br></br> i umysł w możliwie
 				najpełniejszych granicach.”

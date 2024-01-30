@@ -38,9 +38,9 @@ const Form = () => {
     //   </form>
     // </div>
 
-    <div className="max-w-md mx-auto mt-20 mb-20">
-        <h2 className='uppercase font-bold text-2xl text-center'>Napisz do mnie</h2>
-  <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="max-w-md mx-auto mt-20 mb-20 px-10">
+        <h2 className='uppercase font-bold text-2xl text-center mb-3'>Napisz do mnie</h2>
+  <form onSubmit={handleSubmit} className="bg-white shadow-xl border rounded px-8 pt-6 pb-8 mb-4">
     <div className="mb-4">
       <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -84,7 +84,7 @@ const Form = () => {
     </div>
     <div className="flex items-center justify-between">
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="rounded-lg text-sm text-[#fff] font-semibold bg-button hover:bg-button-hover py-2 px-4 transition duration-300"
         type="submit"
       >
         Wyślij

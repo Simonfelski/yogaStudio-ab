@@ -24,31 +24,32 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`sticky top-0 z-50 text-[#fff] bg-[#363434] opacity-45`}>
-      <div>
-        <ul className="hidden md:flex justify-between items-center max-w-[768px] mx-auto font-semibold">
-          <li className={`transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
+    <nav className={`relative top-0 z-50 text-[black] mb-10 opacity- `}>
+      <div className='relative'>
+        <ul className="hidden md:flex justify-between items-center max-w-[768px] mx-auto font-bold text-xl absolute top-2 inset-x-44">
+          <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
             <Link to="/">Strona Główna</Link>
           </li>
-          <li className={`transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
+          <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
             <Link to="/about">O mnie</Link>
           </li>
-          <li className={`uppercase font-bold p-4 ${nav ? 'bg-[#8d6b5f] text-[#fff]' : 'text-[#8d6b5f]'}`}>
+          {/* <li className={`uppercase font-bold p-4 ${nav ? 'bg-[#8d6b5f] text-[#fff]' : 'text-[#fff]'}`}>
             <h1>Agata Budzynska</h1>
-          </li>
-          <li className={`transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
+          </li> */}
+          <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
             <Link to="/withme">Ćwicz ze mną</Link>
           </li>
-          <li className={`transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
+          <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
             <Link to="/contact">Kontakt</Link>
           </li>
         </ul>
       </div>
 
-      <div onClick={() => setNav(!nav)} className="fixed z-50 right-3 top-3 md:hidden">
+      <div onClick={() => setNav(!nav)} className="fixed z-50 right-5 top-10 md:hidden">
         {nav ? <AiOutlineClose size={20} className='text-[#fff]' /> : <AiOutlineMenu size={20} className='text-[#8d6b5f]' />}
       </div>
 
+{/* kolory dla rozwinietej nawigacji */}
       <div
         className={
           nav
@@ -57,25 +58,25 @@ const Navbar = () => {
         }
       >
         <div className="flex flex-col items-center justify-center">
-          <h1 className="mb-2 p-2 uppercase font-bold bg-[#8d6b5f] w-full text-center text-[#fff]">Agata Budzynska</h1>
-          <ul className="text-center text-[#fff] font-semibold py-4">
+          {/* <h1 className="mb-2 p-2 uppercase font-bold bg-[#8d6b5f] w-full text-center text-[#fff]">Agata Budzynska</h1> */}
+          <ul className="text-center text-[#fff] font-semibold py-4 ">
             <li>
               <Link className="block mb-2" to="/">
                 Strona Główna
               </Link>
             </li>
             <li>
-              <Link className="block mb-2" to="/">
+              <Link className="block mb-2" to="/about">
                 O mnie
               </Link>
             </li>
             <li>
-              <Link className="block mb-2" to="/">
+              <Link className="block mb-2" to="/withme">
                 Ćwicz ze mną
               </Link>
             </li>
             <li>
-              <Link className="block" to="/">
+              <Link className="block" to="/contact">
                 Kontakt
               </Link>
             </li>

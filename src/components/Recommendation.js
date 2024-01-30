@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 function Arrow(props) {
 	const { className, style, onClick } = props
-	return <div className={className} style={{ ...style, display: 'block', background: 'black', }} onClick={onClick} />
+	return <div className={className} style={{ ...style, display: 'block', color: 'black', }} onClick={onClick} />
 }
 
 const Recommendation = props => {
@@ -15,8 +15,9 @@ const Recommendation = props => {
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		nextArrow: <Arrow />,
-		prevArrow: <Arrow />,
+		arrows: false,
+		// nextArrow: <Arrow />,
+		// prevArrow: <Arrow />,
 		initialSlide: 0,
 		responsive: [
 			{
@@ -42,7 +43,7 @@ const Recommendation = props => {
 
 	return (
 		<div className="max-w-[1240px] m-auto my-20">
-			<h2 className="text-center text-2xl font-bold mb-10 uppercase"> Opinie</h2>
+			<h2 className="text-center text-2xl font-bold mb-5 md:mb-10 uppercase"> Opinie</h2>
 			<Slider {...settings}>
                 
 				{props.reviews.map(review => (

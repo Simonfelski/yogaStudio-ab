@@ -4,7 +4,7 @@ import ValuesComponent from './ValuesComponent'
 import PrivateComponent from './PrivateComponent'
 import dataPrivate from '../dataPrivate'
 import Footer from './Footer'
-
+import { Link } from 'react-router-dom'
 
 const About = props => {
 	const myValues = dataValues.map(value => {
@@ -15,18 +15,15 @@ const About = props => {
 		return <PrivateComponent key={privateValue.id} privateValue={privateValue} />
 	})
 
-	
-
 	return (
-		<div>
-			<div className="text-center mb-20 pt-8 max-w-[1240px] m-auto">
+		<div className="pt-20">
+			{/* <div className="text-center mb-20 pt-8 max-w-[1240px] m-auto">
 				<h1 className="font-bold text-2xl">O MNIE</h1>
 				<h2 className="font-semibold">Agata Budzyńska</h2>
-			</div>
-
-			<div className="flex mb-20 max-w-[1240px] m-auto">
+			</div> */}
+			<div className="flex flex-col text-center px-5 md:flex-row md:text-left md:mb-20 md:mt-20 md:max-w-[1240px] m-auto">
 				<div className="mr-5">
-					<h3 className="font-semibold">Hej, tu Agata Budzyńska.</h3>
+					<h3 className="font-semibold text-2xl pb-5 md:pb-0">Hej, tu Agata Budzyńska.</h3>
 					<p>
 						Jestem nauczycielką jogi i trenerem medycznym. Kobietą lubiącą wyzwania, lecz dążącą do nich w swoim rytmie.
 					</p>
@@ -35,10 +32,12 @@ const About = props => {
 						ustalony wizerunek jogi jako tylko aktywności fizycznej. I pokazać Ci, że droga jogi to droga do spełnienia
 						marzeń.
 					</p>
-					<div className="flex justify-end max-w-[1240px] m-auto">
-						<button className="mt-5 rounded-lg text-sm text-[#fff] font-semibold  py-2 px-4 bg-button hover:bg-button-hover transition duration-300">
+					<div className="flex justify-center py-10 md:py-0 md:justify-end max-w-[1240px] m-auto">
+						<Link
+							to="/contact"
+							className="mt-5 rounded-lg text-sm text-[#fff] font-semibold  py-2 px-4 bg-button hover:bg-button-hover transition duration-300">
 							JAK MOŻESZ PRAKTYKOWAĆ JOGĘ?
-						</button>
+						</Link>
 					</div>
 
 					<h3 className="font-semibold mt-5">Jak wygląda Twój normalny dzień?</h3>
@@ -55,16 +54,16 @@ const About = props => {
 					</p>
 				</div>
 				<div>
-					<img src="../images/about1.jpg" alt="/" className="rounded-lg" />
+					<img src="../images/about1.jpg" alt="/" className="rounded-lg py-5 md:py-0" />
 				</div>
 			</div>
 
-			<div className="flex mb-20 max-w-[1240px] m-auto ">
-				<div className="mr-5">
-					<img src="../images/about2.jpg" alt="/" className="rounded-lg" />
+			<div className="flex flex-col px-5 text-center md:flex-row md:text-left md:mb-20 md:max-w-[1240px] m-auto ">
+				<div className="mr-5 order-1 md:order-none">
+					<img src="../images/about2.jpg" alt="/" className="rounded-lg py-5 md:py-0" />
 				</div>
 				<div>
-					<h3 className="font-semibold">Marzy mi się świat ludzi spełnionych i szczęśliwych. </h3>
+					<h3 className="font-semibold py-5 md:py-0">Marzy mi się świat ludzi spełnionych i szczęśliwych. </h3>
 					<p>
 						Realizujących swoje marzenia z lekkością i ogromną pewnością siebie. Dokonujących zdrowych dla siebie
 						wyborów na każdym kroku swojego życia. Świadomych swego ciała i charakteru. Wypoczętych. I zwyczajnie
@@ -73,10 +72,12 @@ const About = props => {
 					<p className="mt-5">
 						Wiem, to brzmi nieskończenie idealistycznie. Lecz wiem, że gdy żyjesz zgodnie z jogą, jest to możliwe.
 					</p>
-					<div className="flex justify-end">
-						<button className="mt-5 rounded-lg text-sm text-[#fff] font-semibold bg-[#713132] py-2 px-4 hover:bg-[#c1b3a3] transition duration-300">
+					<div className="flex justify-center py-10 md:py-0 md:justify-end">
+						<Link
+							to="/contact"
+							className="md:mt-5 rounded-lg text-sm text-[#fff] font-semibold bg-[#713132] py-2 px-4 hover:bg-[#c1b3a3] transition duration-300">
 							WYBIERZ SWOJĄ PRAKTYKĘ
-						</button>
+						</Link>
 					</div>
 					<h3 className="font-semibold mt-5">Joga wcale nie była moją miłością od pierwszego wejrzenia.</h3>
 					<p>Moja droga do niej była dość wyboista.</p>
@@ -96,7 +97,7 @@ const About = props => {
 				</div>
 			</div>
 
-			<div className="flex max-w-[1240px] m-auto">
+			<div className="flex flex-col text-center px-5 py-10 md:py-0 md:px-0 md:text-left md:flex-row md:max-w-[1240px] m-auto">
 				<div>
 					<h3 className="font-semibold">Miałam wtedy 20 lat.</h3>
 					<p>
@@ -126,45 +127,18 @@ const About = props => {
 					</p>
 				</div>
 				<div>
-					<img src="../images/about5.jpg" alt="/" className="rounded-lg ml-5" />
+					<img src="../images/about5.jpg" alt="/" className="rounded-lg md:ml-5 py-5 md:py-0" />
 				</div>
 			</div>
 
-			<div className="max-w-full text-center mt-20 py-8 bg-[#f5f2f2]">
-				<h2 className="font-bold uppercase text-xl">Co jest dla mnie ważne?</h2>
+			<div className="m-auto px-12 py-5 md:max-w-full text-center md:mt-20 md:py-8 bg-[#d5c6b3]">
+				<h2 className="font-bold uppercase text-xl pb-5 md:pb-0">Co jest dla mnie ważne?</h2>
 				<p>Mam kilka wartości, którymi kieruję się i na macie i w życiu.</p>
 			</div>
-
-			<div className="flex flex-wrap gap-12 justify-center m-auto py-8 bg-[#f5f2f2] ">{myValues}</div>
-
-			<div className="text-center mb-10 py-8 bg-[#f5f2f2]">
-				<h2 className="font-bold uppercase text-xl max-w-[1240px] m-auto">A prywatnie?</h2>
-				<p className="mb-10">Jaka jestem? Mam swoje dziwne zwyczaje. Może Ty podchodzisz do świata podobnie?</p>
-
-				<div className="flex flex-wrap gap-12 justify-center p-1 max-w-[1240px] m-auto">{myPrivateValues}</div>
-			</div>
-
-			<div className="text-center mt-20 mb-10">
-				<h2 className="font-bold uppercase text-xl">Tu znajdziesz kilka dyplomów,</h2>
-				<p>które zdobyłam na mojej drodze do bycia instruktorką jogi i trenerem medycznym.</p>
-				{/* dyplomy */}
-			</div>
-
+			<div className="flex flex-wrap md:gap-12 justify-center m-auto py-8 bg-[#d5c6b3] ">{myValues}</div>
 			
 
-			<div className="text-center mt-20 mb-10 max-w-[1240px] m-auto">
-				<div>
-					<img src="../images/about7.jpg" alt="/" className="rounded-lg" />
-				</div>
-				<div>
-					<h2 className="font-bold uppercase text-xl mt-10">Czujesz, że chcesz ćwiczyć właśnie ze mną?</h2>
-					<p>Joga ma wiele oblicz. Wybierz praktykę idealną właśnie dla Ciebie.</p>
-					<button className="mt-5 rounded-lg text-sm text-[#fff] font-semibold bg-button hover:bg-button-hover py-2 px-4 transition duration-300">
-						SPRAWDŹ OPCJE
-					</button>
-				</div>
-			</div>
-			<Footer />
+			
 		</div>
 	)
 }
