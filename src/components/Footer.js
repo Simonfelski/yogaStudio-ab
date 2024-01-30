@@ -8,7 +8,8 @@ const Footer = () => {
 		<div className="bg-[#d5c6b3]">
 			<div className="text-center lg:flex lg:justify-evenly lg:p-16">
 				<div className=" uppercase font-bold text-lg py-5">
-					<h1>Agata Budzyńska</h1>
+					
+					<Link to="/">Agata Budzyńska</Link>
 				</div>
 				<div className="py-5">
 					<ul>
