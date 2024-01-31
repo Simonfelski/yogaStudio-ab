@@ -24,19 +24,6 @@ const Form = () => {
     }
 
   return (
-    // <div>
-    //   <form onSubmit={handleSubmit} >
-    //     <input type="text" placeholder='Imię' onChange={handleChange} value={formData.firstName} name='firstName' />
-
-    //     <input type="text" placeholder='Nazwisko' onChange={handleChange} value={formData.secondName} name='secondName' />
-
-    //     <input type="text" placeholder='E-mail' onChange={handleChange} value={formData.email} name='email' />
-
-    //     <input type="text" placeholder='Numer telefonu' onChange={handleChange} value={formData.phoneNumber} name='phoneNumber' />
-
-    //     <button>Wyślij</button>
-    //   </form>
-    // </div>
 
     <div className="max-w-md mx-auto mt-20 mb-20 px-10">
         <h2 className='uppercase font-bold text-2xl text-center mb-3'>Napisz do mnie</h2>

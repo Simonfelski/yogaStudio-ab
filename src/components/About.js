@@ -3,7 +3,6 @@ import dataValues from '../dataValues'
 import ValuesComponent from './ValuesComponent'
 import PrivateComponent from './PrivateComponent'
 import dataPrivate from '../dataPrivate'
-import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
 
@@ -55,13 +54,13 @@ const About = props => {
 					</p>
 				</div>
 				<div>
-					<img src="../images/about1.jpg" alt="/" className="rounded-lg py-5 md:py-0" />
+					<img src="../images/about1.jpg" alt="Pozycja jogi" className="rounded-lg py-5 md:py-0" />
 				</div>
 			</div>
 
 			<div className="flex flex-col px-5 text-center md:flex-row md:text-left md:mb-20 md:max-w-[1240px] m-auto ">
 				<div className="mr-5 order-1 md:order-none">
-					<img src="../images/about2.jpg" alt="/" className="rounded-lg py-5 md:py-0" />
+					<img src="../images/about2.jpg" alt="Pozycja jogi" className="rounded-lg py-5 md:py-0" />
 				</div>
 				<div className='text-justify'>
 					<h3 className="font-semibold py-5 md:py-0">Marzy mi się świat ludzi spełnionych i szczęśliwych. </h3>
@@ -76,7 +75,7 @@ const About = props => {
 					<div className="flex justify-center py-10 md:py-0 md:justify-end">
 						<Link
 							to="/contact"
-							className="md:mt-5 rounded-lg text-sm text-[#fff] font-semibold bg-[#713132] py-2 px-4 hover:bg-[#c1b3a3] transition duration-300">
+							className="md:mt-5 rounded-lg text-sm text-[#fff] font-semibold bg-button py-2 px-4 hover:bg-button-hover transition duration-300">
 							WYBIERZ SWOJĄ PRAKTYKĘ
 						</Link>
 					</div>
@@ -128,15 +127,15 @@ const About = props => {
 					</p>
 				</div>
 				<div>
-					<img src="../images/about5.jpg" alt="/" className="rounded-lg md:ml-5 py-5 md:py-0" />
+					<img src="../images/about5.jpg" alt="Pozycja jogi" className="rounded-lg md:ml-5 py-5 md:py-0" />
 				</div>
 			</div>
 
-			<div className="m-auto px-12 py-5 md:max-w-full text-center md:mt-20 md:py-8 bg-[#d5c6b3]">
+			<div className="m-auto px-12 py-5 md:max-w-full text-center md:mt-20 md:py-8 bg-primary">
 				<h2 className="font-bold uppercase text-xl pb-5 md:pb-0">Co jest dla mnie ważne?</h2>
 				<p>Mam kilka wartości, którymi kieruję się i na macie i w życiu.</p>
 			</div>
-			<div className="flex flex-wrap md:gap-12 justify-center m-auto py-8 bg-[#d5c6b3] ">{myValues}</div>
+			<div className="flex flex-wrap md:gap-12 justify-center m-auto py-8 bg-primary ">{myValues}</div>
 			
 
 			

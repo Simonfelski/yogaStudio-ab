@@ -13,7 +13,7 @@ const About2 = () => {
 
   return (
     <div>
-    <div className="m-auto text-center mb-10 py-8 bg-[#d5c6b3]">
+    <div className="m-auto text-center mb-10 py-8 bg-primary">
 				<h2 className="font-bold uppercase text-xl max-w-[1240px] m-auto pb-5 md:pb-0">A prywatnie?</h2>
 				<p className="mb-10 px-12">Jaka jestem? Mam swoje dziwne zwyczaje. Może Ty podchodzisz do świata podobnie?</p>
 
@@ -28,7 +28,7 @@ const About2 = () => {
 
 			<div className="text-center mt-20 mb-10 max-w-[1240px] m-auto">
 				<div className='px-5'>
-					<img src="../images/about7.jpg" alt="/" className="rounded-lg shadow-xl" />
+					<img src="../images/about7.jpg" alt="Zdjęcie Agaty instruktorki" className="rounded-lg shadow-xl" />
 				</div>
 				<div className='px-10'>
 					<h2 className="font-bold uppercase text-xl mt-10 pb-5 md:pb-0">Czujesz, że chcesz ćwiczyć właśnie ze mną?</h2>

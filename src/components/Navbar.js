@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,6 +10,12 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
+
+  const closeNavbar = () => {
+    if (window.innerWidth <= 768) {
+      setNav(false);
+    }
+  };
  
 
   const handleScroll = () => {
@@ -28,32 +34,32 @@ const Navbar = () => {
       <div className='relative'>
         <ul className="hidden md:flex justify-between items-center max-w-[768px] mx-auto font-bold text-xl absolute top-2 inset-x-44">
           <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
-            <Link to="/">Strona Główna</Link>
+            <NavLink to="/" exact activeClassName="active-link">Strona Główna</NavLink>
           </li>
           <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
-            <Link to="/about">O mnie</Link>
+            <NavLink to="/about">O mnie</NavLink>
           </li>
           {/* <li className={`uppercase font-bold p-4 ${nav ? 'bg-[#8d6b5f] text-[#fff]' : 'text-[#fff]'}`}>
             <h1>Agata Budzynska</h1>
           </li> */}
           <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
-            <Link to="/withme">Ćwicz ze mną</Link>
+            <NavLink to="/withme">Ćwicz ze mną</NavLink>
           </li>
           <li className={` transition-transform transform hover:scale-105 ${nav ? 'text-[#fff]' : ''}`}>
-            <Link to="/contact">Kontakt</Link>
+            <NavLink to="/contact">Kontakt</NavLink>
           </li>
         </ul>
       </div>
 
       <div onClick={() => setNav(!nav)} className="fixed z-50 right-5 top-10 md:hidden">
-        {nav ? <AiOutlineClose size={20} className='text-[#fff]' /> : <AiOutlineMenu size={20} className='text-[#8d6b5f]' />}
+        {nav ? <AiOutlineClose size={20} className='text-[#fff]' /> : <AiOutlineMenu size={20} className='text-secondary' />}
       </div>
 
 {/* kolory dla rozwinietej nawigacji */}
       <div
         className={
           nav
-            ? 'fixed top-0 w-full h-30% border-r border-r-[#8d6b5f] bg-[#d5c6b3] ease-in-out duration-500'
+            ? 'fixed top-0 w-full h-30% border-r border-r-secondary bg-primary ease-in-out duration-500'
             : 'fixed top-[-100%]'
         }
       >
@@ -61,24 +67,24 @@ const Navbar = () => {
           {/* <h1 className="mb-2 p-2 uppercase font-bold bg-[#8d6b5f] w-full text-center text-[#fff]">Agata Budzynska</h1> */}
           <ul className="text-center text-[#fff] font-semibold py-4 ">
             <li>
-              <Link className="block mb-2" to="/">
+              <NavLink className="block mb-2" to="/" onClick={closeNavbar}>
                 Strona Główna
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block mb-2" to="/about">
+              <NavLink className="block mb-2" to="/about" onClick={closeNavbar}>
                 O mnie
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block mb-2" to="/withme">
+              <NavLink className="block mb-2" to="/withme" onClick={closeNavbar}>
                 Ćwicz ze mną
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="block" to="/contact">
+              <NavLink className="block" to="/contact" onClick={closeNavbar}>
                 Kontakt
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

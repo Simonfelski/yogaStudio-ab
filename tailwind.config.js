@@ -5,11 +5,8 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'primary': '#713132',
-      'secondary': '#9f7c65',
-      'third': '#e6dcd2',
-      'fourth': '#c6b1a6',
-      'section': '#e6dcd2',
+      'primary': '#d5c6b3',
+      'secondary': '#8d6b5f',
       'button': '#713132',
       'button-hover':'#bb9d85'
       

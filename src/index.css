@@ -15,6 +15,10 @@ body {
   background-color: #ffeede;
 }
 
+.active-link {
+  color: red;
+}
+
 .flip {
   background-color: transparent;
   width: 30%;
