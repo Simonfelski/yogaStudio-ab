@@ -6,6 +6,7 @@ const Form = () => {
         firstName:'',
         email:'',
         phoneNumber:'',
+        trainingType:'',
         message:''
     })
 
@@ -57,6 +58,16 @@ const Form = () => {
         onChange={handleChange}
         value={formData.phoneNumber}
         name="phoneNumber"
+      />
+    </div>
+    <div className="mb-6">
+      <input
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text"
+        placeholder="Rodzaj zajęć"
+        onChange={handleChange}
+        value={formData.trainingType}
+        name="trainingType"
       />
     </div>
     <div className="mb-4">

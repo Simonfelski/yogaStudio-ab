@@ -34,7 +34,7 @@ const About = props => {
 					</p>
 					<div className="flex justify-center py-10 md:py-0 md:justify-end max-w-[1240px] m-auto">
 						<Link
-							to="/contact"
+							to="/withme"
 							className="mt-5 rounded-lg text-sm text-[#fff] font-semibold  py-2 px-4 bg-button hover:bg-button-hover transition duration-300">
 							JAK MOŻESZ PRAKTYKOWAĆ JOGĘ?
 						</Link>
